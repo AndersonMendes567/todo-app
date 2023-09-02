@@ -24,6 +24,7 @@ db.once('open', async () => {
   const todo = new Todo({
     description: 'Teste 2',
     done: false,  
+
   })
 
   console.log('método de salvar: ', todo.save);

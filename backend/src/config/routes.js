@@ -6,6 +6,7 @@ module.exports = function (server) {
   server.use('/api', router)
 
   router.get('/todos', async (req, res)=> {
+    res.header().met
     res.send(await Todo.find())
   })
 
